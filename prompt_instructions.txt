@@ -1,0 +1,41 @@
+
+Extract the important entities in the text below answering the following questions and generate a json as output following the specified format.
+Questions:
+
+- What is the company?
+- Which industry is this company in?
+- What is this company dedicated to?
+- What is the job title?
+- When was this job posted? output a date
+- What is the seniority level?
+- Which team is this job in?
+- What are the main responsibilities? 
+- What are the minimum requirements?
+- What is the technical expertise required?
+- What is the minimum education level?
+- How many years of experience are required?
+- What is the offered salary range?
+- Where is this job located? output city, state, country
+- Provide a one-line summary of this job description
+JSON Format:
+{{
+    "company": "",
+    "industry": "",
+    "dedication": "",
+    "job_title": "",
+    "job_posted_date": "",
+    "seniority_level": "",
+    "team": "",
+    "responsibilities": "",
+    "minimum_requirements": "",
+    "technical_expertise": "",
+    "minimum_education_level": "",
+    "experience_years_required": "",
+    "salary_range": "",
+    "job_location": "",
+    "job_summary": ""
+}}
+Text:"""
+{job_description}
+"""
+'''

@@ -1,0 +1,71 @@
+Extract the important entities in the text below answering the following questions and generate a json-format string as an output.
+- What is the company?
+- Which industry is this company in?
+- What is this company dedicated to?
+- What is the job title?
+- When was this job posted? output a date
+- What is the seniority level?
+- Which team is this job in?
+- What are the main responsabilities? 
+- What are the mininum requirements?
+- What is the technical expertise required?
+- What is the mininum education level?
+- How many years of experience are required?
+- What is the offered salary range?
+- Where is this job located? output city, state, country
+- Provide a one line summary of this job description
+
+{
+    "company": "",
+    "industry": "",
+    "dedication": "",
+    "job_title": "",
+    "job_posted_date": "",
+    "seniority_level": "",
+    "team": "",
+    "responsibilities": "",
+    "minimum_requirements": "",
+    "technical_expertise": "",
+    "minimum_education_level": "",
+    "experience_years_required": "",
+    "salary_range": "",
+    "job_location": "",
+    "job_summary": ""
+  }
+
+  {
+    "company": "HiveMQ",
+    "industry": "Messaging and Connectivity",
+    "dedication": "Reliable, secure, and scalable data movement to and from connected IoT devices",
+    "job_title": "Technical Account Manager",
+    "job_posted_date": "N/A",
+    "seniority_level": "N/A",
+    "team": "Customer Success",
+    "responsibilities": "Maintaining relationships with key customers, addressing technical needs, identifying new opportunities for expansion, providing architectural support, representing customer feedback",
+    "minimum_requirements": "Bachelor's degree in a related technical field or equivalent practical experience, customer-facing experience, experience in distributed systems with messaging or database technology, experience in designing architecture and proofs of concept",
+    "technical_expertise": "Distributed systems, messaging or database technology, architecture design",
+    "minimum_education_level": "Bachelor's degree in a related technical field or equivalent",
+    "experience_years_required": "N/A",
+    "salary_range": "N/A",
+    "job_location": "United States (Remote)",
+    "job_summary": "Technical Account Manager at HiveMQ in the messaging and connectivity industry, responsible for maintaining customer relationships, addressing technical needs, and driving expansion."
+}
+
+{
+    "company": "HiveMQ",
+    "industry": "Technology",
+    "dedication": "Messaging Platform for Reliable, Secure and Scalable Data Movement to and from Connected IoT Devices",
+    "job_title": "Technical Account Manager",
+    "job_posted_date": "",
+    "seniority_level": "Mid-Level",
+    "team": "Customer Success Team",
+    "responsibilities": "Maintaining Relationships with HiveMQ's Current Technical Champions, Addressing their Technical Needs, Keeping a Regular Bidirectional Communication Channel Open, Identifying New Champions, Identifying New Opportunities to Expand HiveMQ's Adoption, Making Sure our Clients Receive Top Service, Representing the Customers Voice towards the HiveMQ Product Management, Collaborating with Technical Support Team, Ensuring Documentation and Knowledge Base is Constantly Improving, Communicating Customers Longterm Success Criteria Internally",
+    "minimum_requirements": "Bachelors Degree in a Related Technical Field or Equivalent Practical Experience, Customer-Facing Experience, Interfacing with Executive Stakeholders, Driving Technical Implementation or Transformation Programs, Experience in Distributed Systems with Messaging or Database Technology, Experience in Designing Architecture and Proofs of Concept, Ability to Manage Competing Priorities, Excellent Written and Verbal Communication Skills in English (German is a 
+Plus)",
+    "technical_expertise": "Distributed Systems with Messaging or Database Technology, Designing Architecture and Proofs of Concept",
+    "minimum_education_level": "Bachelors Degree",
+    "experience_years_required": "2+ Years",
+    "salary_range": "",
+    "job_location": "United States (Remote)",
+    "job_summary": "HiveMQ is Looking to Add to their Team of Innovative and Motivated People, Join Them as They Work to Contribute to the Fast Moving Development of the IoT Ecosystem and Help Companies Enable Mission Critical Use Cases."      
+}
