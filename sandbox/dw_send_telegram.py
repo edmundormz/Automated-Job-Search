@@ -6,10 +6,10 @@ logging.basicConfig(format="%(asctime)s - %(name)s - %(levelname)s - %(message)s
 logger = logging.getLogger(__name__)
 
 # Telegram bot token
-TOKEN = "5918242394:AAGWuT6D4JKEnXKzej4eZWctAoiWlN4ygms"
+TOKEN = ""
 
 # User ID to send the message
-USER_ID = "949572254"
+USER_ID = ""
 
 def send_message_once(token, user_id, message):
     try:

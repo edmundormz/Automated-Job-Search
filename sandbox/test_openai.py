@@ -1,7 +1,7 @@
 import openai
 
 # Set up your OpenAI API credentials
-openai.api_key = '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'
+openai.api_key = ''
 
 # Read my resume
 with open('resume.txt','r') as file:
