@@ -13,6 +13,8 @@ load_dotenv('./main/.env')
 # Set up your API key and other parameters
 GOOGLE_API_KEY = os.getenv('GOOGLE_API_KEY')
 SEARCH_ENGINE_ID = os.getenv('SEARCH_ENGINE_ID')
+TELEGRAM_TOKEN = os.getenv('TELEGRAM_TOKEN')
+TELEGRAM_CHAT_ID = os.getenv('TELEGRAM_CHAT_ID')
 openai.api_key = os.getenv('OPENAI_API_KEY')
 
 #Create query to search on google for the last 24 hours
@@ -129,7 +131,12 @@ for url,job_title in url_dict.items():
     if url in matching_positions:
         matching_positions[url]['job_title'] = job_title
 
-
+#Send the telegram messages
+pre_call = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage?chat_id={TELEGRAM_CHAT_ID}"
+for url, data in matching_positions.items():
+    message = f'New job match!\n{data["job_title"]}\nMatch index: {data["match_index"]}\n{url}'
+    call= pre_call + f'&text={message}'
+    print(requests.get(call).json())
 
 #for match in matching_positions:
     #ask open ai to generate a cover letter
